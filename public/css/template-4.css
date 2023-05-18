@@ -1,0 +1,235 @@
+:root {
+  --space-m: 12px;
+  --space-xm: 16px;
+  --space-l: 24px;
+  --space-b: 36px;
+
+  --size-s: 14px;
+  --size-d: 16px;
+  --size-l: 20px;
+  --size-b: 27px;
+  --size-xb: 36px;
+
+  --color-border: #dee2e6;
+  --color-primary: rgb(46, 46, 255);
+  --color-white: #ffff;
+  --color-title: #212529;
+  --color-text: var(--color-text);
+
+  --border-radius: 12px;
+
+  --weight-title: 500;
+  --weight-text: 400;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ========================== */
+
+.page {
+  background: var(--color-white);
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.page_content {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ========================== */
+
+.header {
+  padding: var(--space-l) 0;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 17px;
+  color: var(--color-white);
+  padding: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: calc(var(--border-radius) / 2);
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: block;
+  display: flex;
+}
+
+.nav_inline {
+  gap: var(--space-l);
+}
+
+.nav_vertical {
+  gap: var(--space-xm);
+  flex-direction: column;
+}
+
+.nav_link {
+  color: var(--color-text);
+  font-size: var(--size-d);
+  text-decoration: none;
+  line-height: 100%;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-l) 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_copyright {
+  font-size: var(--size-s);
+  color: #6c757d;
+  display: block;
+  margin-top: var(--space-l);
+}
+
+.footer_title {
+  font-size: var(--size-l);
+  color: var(--color-title);
+  font-weight: var(--weight-title);
+  display: block;
+  margin-bottom: var(--space-l);
+}
+
+.button {
+  display: inline-block;
+  font-size: var(--size-d);
+  text-decoration: none;
+  padding: var(--space-m) var(--space-xm);
+  border-radius: var(--border-radius);
+}
+
+.hero {
+  display: flex;
+  gap: 80px;
+}
+
+.hero_image {
+  width: 500px;
+  height: 500px;
+  border-radius: var(--border-radius);
+}
+
+.hero_info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+  justify-content: center;
+}
+
+.hero_title {
+  color: var(--color-title);
+  font-size: var(--size-xb);
+  font-weight: var(--weight-title);
+  line-height: 120%;
+}
+
+.hero_text {
+  color: var(--color-text);
+  font-size: var(--size-d);
+  font-weight: var(--weight-title);
+  line-height: 170%;
+}
+
+.hero_button {
+  text-decoration: none;
+  background-color: #6c757d;
+  color: var(--color-white);
+  max-width: 120px;
+  width: 100%;
+}
+
+.hero_button:hover {
+  opacity: 0.7;
+}
+
+.featured {
+  display: flex;
+  gap: var(--space-l);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.featured_card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+
+  max-width: 33%;
+  padding: var(--space-l);
+}
+
+.featured_image {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--border-radius);
+}
+
+.featured_title {
+  font-weight: var(--weight-title);
+  font-size: var(--size-b);
+  line-height: 100%;
+}
+
+.featured_info {
+  font-weight: var(--weight-text);
+  font-size: var(--size-d);
+  line-height: 170%;
+}
+
+.featured_link {
+  color: var(--color-primary);
+}
+
+.actions {
+  display: flex;
+  background-color: #563d7c;
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  justify-content: space-between;
+  padding: var(--space-l);
+}
+
+.action_title {
+  font-size: var(--size-l);
+  font-weight: var(--weight-text);
+}
+
+.action_card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-s);
+  max-width: 240px;
+  width: 100%;
+}
+
+.action_button {
+  color: var(--color-title);
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.action_button:hover {
+  opacity: 0.7;
+}
