@@ -25,17 +25,7 @@
     </div>
     <div class="articles-cards">
         {{#each articles}}
-            <div class="article-card">
-                <div class="photo">
-                    <img src="{{photo}}" alt="card-photo">
-                    {{#if isNew}}
-                        <span class="isNew">NEW</span>
-                    {{/if}}
-                </div>
-                <h3>{{name}}</h3>
-                <p class="description">{{description}}</p>
-                <button>Read All</button>
-            </div>
+            {{> articleCardDark data=this}}
         {{/each}}
     </div>
 </main>
