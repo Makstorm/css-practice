@@ -1,0 +1,21 @@
+{{#with data}}
+  <div class='header-top'>
+    <div class='logo'>Logo</div>
+    <nav class='header-nav'>
+      {{#each links}}
+        <a href='{{url}}' class='nav'>{{text}}</a>
+      {{/each}}
+    </nav>
+  </div>
+  <div class='header-bottom'>
+    <div class='header-info'>
+      {{#with ad}}
+        <a href='{{url}}' class='add-btn'>Ad</a>
+        <span class='info-text'>{{text}}</span>
+      {{/with}}
+    </div>
+    <div class='users-online'>
+      <span>Users online: {{userOnline}}</span>
+    </div>
+  </div>
+{{/with}}
